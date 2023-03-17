@@ -205,6 +205,7 @@ namespace API.Data
                     Type = "Boots",
                     QuantityInStock = 100
                 },
+                
             };
 
             //context.Products.AddRange(products);
