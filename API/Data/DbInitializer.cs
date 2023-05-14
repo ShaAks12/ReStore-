@@ -205,6 +205,17 @@ namespace API.Data
                     Type = "Boots",
                     QuantityInStock = 100
                 },
+                new Product
+                {
+                    Name = "Akash",
+                    Description =
+                        "Profile",
+                    Price = 0,
+                    PictureUrl = "/images/products/Ak_pic.png",
+                    Brand = "Angular",
+                    Type = "Boards",
+                    QuantityInStock = 100
+                },
                 
             };
 
