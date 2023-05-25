@@ -10,6 +10,8 @@ namespace API.Data
             
         }
 
-    public DbSet<Product> Products{get;set;}
+        public DbSet<Product> Products{get;set;} //Dbset for creating a table
+        public DbSet<Basket> Baskets{get;set;} //Dbset for creating a table
+        
     }
 }

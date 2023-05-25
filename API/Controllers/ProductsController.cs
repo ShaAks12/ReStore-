@@ -18,6 +18,7 @@ namespace API.Controllers
 
         [HttpGet]
         public async Task<ActionResult<List<Product>>> GetProducts(){
+            
             var products =  await context.Products.ToListAsync();
 
             return Ok(products);// when we use async method then we dont use this line 
