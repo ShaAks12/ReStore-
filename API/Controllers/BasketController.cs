@@ -56,7 +56,7 @@ namespace API.Controllers
 
         [HttpDelete]
 
-        public async Task<ActionResult> RemoveBasketItem(int productId, int qauntity)
+        public async Task<ActionResult> RemoveBasketItem(int productId, int quantity)
         {
             // get basket
             var basket = await RetrieveBasket(); 
@@ -66,7 +66,7 @@ namespace API.Controllers
             var item = basket.Items.FirstOrDefault(item => item.ProductId == productId);
             if (item == null) return NotFound();
 
-            item.Quantity -= qauntity;
+            item.Quantity -= quantity;
             if (item.Quantity == 0) basket.Items.Remove(item);
 
             //or
