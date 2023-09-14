@@ -28,6 +28,8 @@ namespace API.Controllers
             //return await context.Products.ToListAsync();
         }
 
+        //Get verbs is used to fetch all records via id
+
         [HttpGet("{id}")] //api/products/3
         public async Task<ActionResult<Product>> GetProduct(int id){
 
